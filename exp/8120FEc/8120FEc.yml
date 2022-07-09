@@ -7,7 +7,7 @@ googlecloud:
 
 
 experiment:
-  script: "src/completo/z912_FE_UTN.r"
+  script: "src/completo/z913_FE_UTN.r"
   restart: FALSE
   name: "exp"
   type: "FeatureEngineering"
@@ -15,6 +15,13 @@ experiment:
   description: "Lags1,delta1, tendencia, media"
 
   requires: [ "DT0001" ]
+
+randomforest: #crea variables {0,1} con las hojas de un random forest, atención que explota
+  correr: TRUE
+  num.trees: 50
+  max.depth: 6
+  min.node.size: 500
+  mtry: 13
 
 
 param:
