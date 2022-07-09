@@ -17,12 +17,12 @@ experiment:
   name: "exp"
   type: "ZZ"
   tags: [ "austero" ]
-  requires:   [ "8120HTa" ]
+  requires:   [ "8120HTb" ]
 
 param:
   semilla_primos:  442837 #poner aqui una semilla propia, sirve para crear los numeros primos que seran semillas
 
-  semillerio:  50     #nuevo parámetro, cantidad de semillas que se le cambia al lightgbm y se ensamblan
+  semillerio:  65     #nuevo parámetro, cantidad de semillas que se le cambia al lightgbm y se ensamblan
                       #cuanto mas grande, mejor ganancia; pero demora mucho mas en correr
   modelos_qty:  1
   clase_train_POS:    [ "BAJA+2", "BAJA+1" ]
