@@ -30,14 +30,14 @@ param:
 
   #lags y sus deltas
   lags: 
-    correr:    [  TRUE,  TRUE, TRUE, TRUE, FALSE, FALSE ]  #si se corre el lag
+    correr:    [  TRUE,  TRUE, TRUE, TRUE, TRUE, TRUE ]  #si se corre el lag
     lag:       [     1,      2,     3,     4,     5,     6 ]  #orden del lag
-    delta:     [  TRUE,  TRUE, TRUE, TRUE, FALSE, FALSE ]  #solo se activa si correr=TRUE 
+    delta:     [  TRUE,  TRUE, TRUE, TRUE, TRUE, TRUE ]  #solo se activa si correr=TRUE 
     canaritos: [   0.0,    0.1,   0.1,   0.0,   0.0,   0.0 ]  #porcentaje de canaritos asesinos, del total de columnas del dataset, 0 indica NO reducir campos por canaritos
 
 
   tendenciaYmuchomas:  #todos FALSE
-    correr:    [  TRUE, FALSE, FALSE, FALSE ]   #tendencias a correr, es lo que controla y se impone al resto
+    correr:    [  TRUE, TRUE, TRUE, TRUE ]   #tendencias a correr, es lo que controla y se impone al resto
     ventana:   [     6,     3,    9,     12 ]   #tamaño de la ventana, solo se corren las que dicen  correr=TRUE
     tendencia: [  TRUE,  TRUE,  TRUE,  TRUE ]   #pendiente de la recta ajustada por cuadrados minimos
     minimo:    [ FALSE,  TRUE, FALSE, FALSE ]   #minimo de la ventana
@@ -50,7 +50,7 @@ param:
 
   tony:  FALSE
 
-  rankeador: FALSE
+  rankeador: TRUE
 
   canaritos_final: 0.0   #si es CERO entonces no hace el filtrado final por canaritos
 
