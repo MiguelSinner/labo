@@ -9,12 +9,12 @@ experiment:
   restart: FALSE
   name: "exp"
   type: "TrainingStrategy"
-  tags: [ "austero", "undersampling10" ]
-  requires: [ "8120FEa" ]
+  tags: [ "austero" ]
+  requires: [ "8120FEb" ]
 
 
 param:
-  semilla: 102191
+  semilla: 442837
 
   #donde aplico el modelo final, los datos sin clase
   future:
@@ -32,7 +32,7 @@ param:
       desde:  202001
       hasta:  202009
     excluir: [ 202006 ]
-    undersampling: [ {clase: "CONTINUA", prob: 0.1 }]  #ATENCION  undersampling al 10%
+    undersampling: [ ]  #ATENCION  sin undersampling
 
   #donde valido
   validate:
